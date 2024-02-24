@@ -1,0 +1,10 @@
+version: 2
+
+models:
+   - name: customer
+     config:
+        materialised: incremental
+        schema: load
+        pre-hook: "USE ROLE LOAD_ADMIN;"
+        database: DATAVAULT
+        post-hook: "USE ROLE ACCOUNTADMIN;"

@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+   - name: datap
+     database: SNOWFLAKE_SAMPLE_DATA
+     schema: TPCH_SF10
+     tables: 
+        - name: customer
+        - name: lineitem
+        - name: nation
+        - name: orders
+        - name: part
+        - name: partsupp
+        - name: region
+        - name: supplier
